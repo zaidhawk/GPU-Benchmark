@@ -1,6 +1,9 @@
 #ifndef GPU_MONITOR_H
 #define GPU_MONITOR_H
 
+#ifndef NOMINMAX
+#define NOMINMAX
+#endif
 #include <windows.h>
 #include <string>
 
@@ -53,7 +56,7 @@ public:
         hNvml = LoadLibraryA("nvml.dll");
         if (!hNvml) return false;
 
-        // Support both _v2 and standard entry points
+        // try the _v2 functions first
         nvmlInit = (pfn_nvmlInit)GetProcAddress(hNvml, "nvmlInit_v2");
         if (!nvmlInit) nvmlInit = (pfn_nvmlInit)GetProcAddress(hNvml, "nvmlInit");
 
