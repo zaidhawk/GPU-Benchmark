@@ -2,6 +2,8 @@
 
 A small GPU benchmark I made with C++ and OpenGL.
 
+![GPUBench running the torus scene](docs/screenshot.png)
+
 It has 3 scenes:
 - **Cube**: a single spinning lit cube (light load)
 - **Torus**: a fur covered donut drawn as 64 layers (heavy on pixel shading)
@@ -34,4 +36,4 @@ Or just run the build task in VS Code.
 
 ## Libraries
 
-GLFW, GLAD, GLM, Dear ImGui
+GLFW, GLAD, GLM, Dear ImGui (MIT license, see `imgui/LICENSE.txt`)
