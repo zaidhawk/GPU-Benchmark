@@ -2,7 +2,7 @@
 
 A small GPU benchmark I made with C++ and OpenGL.
 
-![GPUBench running the torus scene](docs/screenshot.png)
+![GPUBench running the cube, torus and armada scenes at 8K](docs/demo.gif)
 
 It has 3 scenes:
 - **Cube**: a single spinning lit cube (light load)
